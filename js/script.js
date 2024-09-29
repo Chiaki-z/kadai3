@@ -38,3 +38,21 @@ $(function () {
 $(function(){
   $('#datepicker').datepicker();
 });
+
+ //会場↓
+ function formSwitch() {
+  hoge = document.getElementsByName('place1')
+  if (hoge[0].checked) {
+      // 好きな食べ物が選択されたら下記を実行します
+      document.getElementById('online').style.display = "";
+      document.getElementById('offline').style.display = "none";
+  } else if (hoge[1].checked) {
+      // 好きな場所が選択されたら下記を実行します
+      document.getElementById('online').style.display = "none";
+      document.getElementById('offline').style.display = "";
+  } else {
+      document.getElementById('online').style.display = "none";
+      document.getElementById('offline').style.display = "none";
+  }
+}
+window.addEventListener('load', formSwitch()); 

@@ -75,6 +75,12 @@ body {
 #reservation {
   max-width: 200px;
 }
+.form-check label{
+  display: block;
+}
+#online,#offline{
+  margin-bottom: 40px;
+}
 /* エラーメッセージ用 */
 .error-text {
   color: #de3f2e;
