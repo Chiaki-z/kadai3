@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
   </head>
 
   <body>
@@ -44,7 +43,26 @@
             <input type="text" id="datepicker"> 13時 ～ 14時
             <p id="reservation-error" class="error-text"></p>
           </dd>
-        </dl>
+
+          <dt><label for="place">受講形式</label><span>必須</span></dt>
+        <dd>
+          <div class="form-check">
+            <label><input type="radio" name="place1" class="radio" onclick="formSwitch()" checked>オンラインで受講</label>
+            <label><input type="radio" name="place1" class="radio" onclick="formSwitch()">会場で受講</label>
+          </div>
+        </dd>
+      </dl>
+        <div id="online">
+          <p>当日はオンライン会議システムを使用いたします。
+          <br>ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。
+          <br>参加方法については、前日までに別途ご案内を差し上げます。</p>
+        </div>
+        <div id="offline">
+          <p>【会場情報】
+          <br>会場：新宿プラザ1F Room3
+          <br>住所：〒100-0000　東京都新宿区新宿1-1-1
+          <br>電話番号：00-0000-0000</p>
+        </div>
 
         <div class="button-area">
           <button id="submit-button" type="button" value="">
@@ -53,5 +71,6 @@
         </div>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
