@@ -15,8 +15,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
     <script src="js/script.js"></script>
   </head>
 
@@ -41,7 +41,7 @@
 
           <dt><label for="reservation">予約日</label><span>必須</span></dt>
           <dd>
-            <input type="text" /> 13時 ～ 14時
+            <input type="text" id="datepicker"> 13時 ～ 14時
             <p id="reservation-error" class="error-text"></p>
           </dd>
         </dl>

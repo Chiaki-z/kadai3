@@ -33,3 +33,8 @@ $(function () {
     }
   });
 });
+
+//カレンダー↓
+$(function(){
+  $('#datepicker').datepicker();
+});
